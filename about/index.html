@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>About php.js - php.js</title>
+  <meta name="author" content="Kevin van Zonneveld">
+
+  
+  <meta name="description" content="About php.js Sep 26th, 2012 php.js is a resource that offers community-built JavaScript alternatives for PHP functions. If you want to perform high- &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://phpjs.org/about/">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="php.js" type="application/atom+xml">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-63083-7']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <a target="_blank" href="https://github.com/kvz/phpjs">
+    <img id="fork-us" style="position: fixed; z-index: 99; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub">
+  </a>
+  <header role="banner"><hgroup>
+  <div id="logo">
+  	<div id="logoLeft">{</div>
+  	<div id="logoText">php</div>
+  	<div id="logoRight">}</div>
+  	<div class="clear"></div>
+  </div>
+  <h1><a href="/">.js</a></h1>
+  
+    <h2>A resource of php functions in JavaScript</h2>
+  
+  <div class="clear"></div>
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:phpjs.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/about">About</a></li>
+  <li><a href="/blog/archives">Blog</a></li>
+  <li><a href="/functions">Functions</a></li>
+  <li><a href="/authors">Authors</a></li>
+  <li><a target="_blank" href="https://github.com/kvz/phpjs/wiki/_pages">Wiki</a></li>
+  <li><a target="_blank"  href="http://twitter.com/phpjs">@phpjs</a></li>
+  <li><a target="_blank"  href="http://identi.ca/brettz9">@brettz9</a></li>
+  <li><a target="_blank"  href="http://twitter.com/kvz">@kvz</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article role="article">
+  
+  <header>
+    <h1 class="entry-title">About php.js</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-26T17:18:00+02:00" pubdate data-updated="true">Sep 26<span>th</span>, 2012</time></p>
+  </header>
+  
+  <p>php.js is a resource that offers community-built JavaScript alternatives for PHP functions.</p>
+
+<p>If you want to perform high-level operations on JavaScript platforms such as webbrowsers, node.js, etc, you probably need to write JS that combines its lower-level functions and build it up until you have something useful like:
+<a href="http://phpjs.org/functions/strip_tags/">strip_tags</a>,
+<a href="http://phpjs.org/functions/strtotime/">strtotime</a>,
+<a href="http://phpjs.org/functions/strftime/">strftime</a>,
+<a href="http://phpjs.org/functions/number_format/">number_format</a>,
+<a href="http://phpjs.org/functions/wordwrap/">wordwrap</a>, or
+<a href="http://phpjs.org/functions/date/">date</a>.</p>
+
+<p>PHP is a language with many high-level functions and while they&#8217;re not always implemented as consistently as we&#8217;d like (mimicking their underlying C parts), it has a huge following familiar with its functions.</p>
+
+<p>We recognize JS has beautiful language features, and we encourage you to learn them.
+Never let php.js be an excuse not to.
+For the this reason we don&#8217;t offer gigantic php.js packages or compilers anymore.</p>
+
+<p>That said, we do think it&#8217;s a challenge to port everything and decided to also port low-level PHP functions like
+<a href="http://phpjs.org/functions/strpos/">strpos</a>
+even though it has a perfectly fine (and more performant!) JavaScript counterpart (<a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/indexOf">String.indexOf</a>).
+Besides the intellectual challenge of seeing how far we could come, porting ALL THE THINGS opens up php.js to be used for
+other fun thought excercises such as realtime in-browser debugging/running of PHP code, or running .php files with JavaScript interpreters.
+Also, there are quite a few PHP developers that use php.js just to learn how something is done in JavaScript.</p>
+
+<p>And so we see ourselves as this big resource and leave it up to the developer to decide what makes sense to take from it.
+And what not.</p>
+
+<p>Under the motto: &#8220;Make it work, then make it work better&#8221;, we have plently of functions here online that aren&#8217;t perfect just yet.
+If you know how to improve, just send us a pull request on GitHub.</p>
+
+<h2>Contributing</h2>
+
+<p>We use <a href="http://github.com/kvz/phpjs">github</a> for collaboration. Comments are for remarks only.
+Please adhere to our <a href="https://github.com/kvz/phpjs/wiki/DeveloperGuidelines">coding standards</a> before
+sending a pull request.</p>
+
+<h2>Licensing</h2>
+
+<p>php.js is dual licensed under the MIT licenses.</p>
+
+<p>The MIT license allows you to use the library as you see fit (even in commercial projects) as long as you redistribute original the license with it. You&#8217;re not obligated to share your improvements, but obviously that would be greatly appreciated and ensure you won&#8217;t lose your changes after you upgrade.</p>
+
+<pre><code>php.js is copyright 2012 Kevin van Zonneveld.
+
+Portions copyright Brett Zamir (http://brett-zamir.me), Kevin van Zonneveld
+(http://kevin.vanzonneveld.net), Onno Marsman, Theriault, Michael White
+(http://getsprink.com), Waldo Malqui Silva, Paulo Freitas, Jack, Jonas
+Raoni Soares Silva (http://www.jsfromhell.com), Philip Peterson, Legaev
+Andrey, Ates Goral (http://magnetiq.com), Alex, Ratheous, Martijn Wieringa,
+Rafa? Kukawski (http://blog.kukawski.pl), lmeyrick
+(https://sourceforge.net/projects/bcmath-js/), Nate, Philippe Baumann,
+Enrique Gonzalez, Webtoolkit.info (http://www.webtoolkit.info/), Carlos R.
+L. Rodrigues (http://www.jsfromhell.com), Ash Searle
+(http://hexmen.com/blog/), Jani Hartikainen, travc, Ole Vrijenhoek,
+Erkekjetter, Michael Grier, Rafa? Kukawski (http://kukawski.pl), Johnny
+Mast (http://www.phpvrouwen.nl), T.Wild, d3x,
+http://stackoverflow.com/questions/57803/how-to-convert-decimal-to-hex-in-javascript,
+Rafa? Kukawski (http://blog.kukawski.pl/), stag019, pilus, WebDevHobo
+(http://webdevhobo.blogspot.com/), marrtins, GeekFG
+(http://geekfg.blogspot.com), Andrea Giammarchi
+(http://webreflection.blogspot.com), Arpad Ray (mailto:arpad@php.net),
+gorthaur, Paul Smith, Tim de Koning (http://www.kingsquare.nl), Joris, Oleg
+Eremeev, Steve Hilder, majak, gettimeofday, KELAN, Josh Fraser
+(http://onlineaspect.com/2007/06/08/auto-detect-a-time-zone-with-javascript/),
+Marc Palau, Martin
+(http://www.erlenwiese.de/), Breaking Par Consulting Inc
+(http://www.breakingpar.com/bkp/home.nsf/0/87256B280015193F87256CFB006C45F7),
+Chris, Mirek Slugen, saulius, Alfonso Jimenez
+(http://www.alfonsojimenez.com), Diplom@t (http://difane.com/), felix,
+Mailfaker (http://www.weedem.fr/), Tyler Akins (http://rumkin.com), Caio
+Ariede (http://caioariede.com), Robin, Kankrelune
+(http://www.webfaktory.info/), Karol Kowalski, Imgen Tata
+(http://www.myipdf.com/), mdsjack (http://www.mdsjack.bo.it), Dreamer,
+Felix Geisendoerfer (http://www.debuggable.com/felix), Lars Fischer, AJ,
+David, Aman Gupta, Michael White, Public Domain
+(http://www.json.org/json2.js), Steven Levithan
+(http://blog.stevenlevithan.com), Sakimori, Pellentesque Malesuada,
+Thunder.m, Dj (http://phpjs.org/functions/htmlentities:425#comment_134018),
+Steve Clay, David James, Francois, class_exists, nobbler, T. Wild, Itsacon
+(http://www.itsacon.net/), date, Ole Vrijenhoek (http://www.nervous.nl/),
+Fox, Raphael (Ao RUDLER), Marco, noname, Mateusz "loonquawl" Zalega, Frank
+Forte, Arno, ger, mktime, john (http://www.jd-tech.net), Nick Kolosov
+(http://sammy.ru), marc andreu, Scott Cariss, Douglas Crockford
+(http://javascript.crockford.com), madipta, Slawomir Kaniecki,
+ReverseSyntax, Nathan, Alex Wilson, kenneth, Bayron Guevara, Adam Wallner
+(http://web2.bitbaro.hu/), paulo kuong, jmweb, Lincoln Ramsay, djmix,
+Pyerre, Jon Hohle, Thiago Mata (http://thiagomata.blog.com), lmeyrick
+(https://sourceforge.net/projects/bcmath-js/this.), Linuxworld, duncan,
+Gilbert, Sanjoy Roy, Shingo, sankai, Oskar Larsson H?gfeldt
+(http://oskar-lh.name/), Denny Wardhana, 0m3r, Everlasto, Subhasis Deb,
+josh, jd, Pier Paolo Ramon (http://www.mastersoup.com/), P, merabi, Soren
+Hansen, Eugene Bulkin (http://doubleaw.com/), Der Simon
+(http://innerdom.sourceforge.net/), echo is bad, Ozh, XoraX
+(http://www.xorax.info), EdorFaus, JB, J A R, Marc Jansen, Francesco, LH,
+Stoyan Kyosev (http://www.svest.org/), nord_ua, omid
+(http://phpjs.org/functions/380:380#comment_137122), Brad Touesnard, MeEtc
+(http://yass.meetcweb.com), Peter-Paul Koch
+(http://www.quirksmode.org/js/beat.html), Olivier Louvignes
+(http://mg-crea.com/), T0bsn, Tim Wiel, Bryan Elliott, Jalal Berrami,
+Martin, JT, David Randall, Thomas Beaucourt (http://www.webapp.fr), taith,
+vlado houba, Pierre-Luc Paour, Kristof Coomans (SCK-CEN Belgian Nucleair
+Research Centre), Martin Pool, Kirk Strobeck, Rick Waldron, Brant Messenger
+(http://www.brantmessenger.com/), Devan Penner-Woelk, Saulo Vallory, Wagner
+B. Soares, Artur Tchernychev, Valentina De Rosa, Jason Wong
+(http://carrot.org/), Christoph, Daniel Esteban, strftime, Mick@el, rezna,
+Simon Willison (http://simonwillison.net), Anton Ongson, Gabriel Paderni,
+Marco van Oort, penutbutterjelly, Philipp Lenssen, Bjorn Roesbeke
+(http://www.bjornroesbeke.be/), Bug?, Eric Nagel, Tomasz Wesolowski,
+Evertjan Garretsen, Bobby Drake, Blues (http://tech.bluesmoon.info/), Luke
+Godfrey, Pul, uestla, Alan C, Ulrich, Rafal Kukawski, Yves Sucaet,
+sowberry, Norman "zEh" Fuchs, hitwork, Zahlii, johnrembo, Nick Callen,
+Steven Levithan (stevenlevithan.com), ejsanders, Scott Baker, Brian Tafoya
+(http://www.premasolutions.com/), Philippe Jausions
+(http://pear.php.net/user/jausions), Aidan Lister
+(http://aidanlister.com/), Rob, e-mike, HKM, ChaosNo1, metjay, strcasecmp,
+strcmp, Taras Bogach, jpfle, Alexander Ermolaev
+(http://snippets.dzone.com/user/AlexanderErmolaev), DxGx, kilops, Orlando,
+dptr1988, Le Torbi, James (http://www.james-bell.co.uk/), Pedro Tainha
+(http://www.pedrotainha.com), James, Arnout Kazemier
+(http://www.3rd-Eden.com), Chris McMacken, gabriel paderni, Yannoo,
+FGFEmperor, baris ozdil, Tod Gentille, Greg Frazier, jakes, 3D-GRAF, Allan
+Jensen (http://www.winternet.no), Howard Yeend, Benjamin Lupton, davook,
+daniel airton wermann (http://wermann.com.br), Atli T¨®r, Maximusya, Ryan
+W Tenney (http://ryan.10e.us), Alexander M Beedie, fearphage
+(http://http/my.opera.com/fearphage/), Nathan Sepulveda, Victor, Matteo,
+Billy, stensi, Cord, Manish, T.J. Leahy, Riddler
+(http://www.frontierwebdev.com/), Rafa? Kukawski, FremyCompany, Matt
+Bradley, Tim de Koning, Luis Salazar (http://www.freaky-media.com/), Diogo
+Resende, Rival, Andrej Pavlovic, Garagoth, Le Torbi
+(http://www.letorbi.de/), Dino, Josep Sanz (http://www.ws3.es/), rem,
+Russell Walker (http://www.nbill.co.uk/), Jamie Beck
+(http://www.terabit.ca/), setcookie, Michael, YUI Library:
+http://developer.yahoo.com/yui/docs/YAHOO.util.DateLocale.html, Blues at
+http://hacks.bluesmoon.info/strftime/strftime.js, Ben
+(http://benblume.co.uk/), DtTvB
+(http://dt.in.th/2008-09-16.string-length-in-bytes.html), Andreas, William,
+meo, incidence, Cagri Ekin, Amirouche, Amir Habibi
+(http://www.residence-mixte.com/), Luke Smith (http://lucassmith.name),
+Kheang Hok Chin (http://www.distantia.ca/), Jay Klehr, Lorenzo Pisani,
+Tony, Yen-Wei Liu, Greenseed, mk.keck, Leslie Hoare, dude, booeyOH, Ben
+Bryan
+
+Licensed under the MIT (MIT-LICENSE.txt) license.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL KEVIN VAN ZONNEVELD BE LIABLE FOR ANY CLAIM, DAMAGES
+OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+
+  
+    <footer>
+      <p class="meta">
+        
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-26T17:18:00+02:00" pubdate data-updated="true">Sep 26<span>th</span>, 2012</time>
+        
+      </p>
+      
+    </footer>
+  
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <!-- Generated by Rakefile:build -->
+<section>
+<h1>Categories</h1>
+<ul id='category-list'>
+<li><a href="/categories/array">array</a></li>
+
+<li><a href="/categories/bc">bc</a></li>
+
+<li><a href="/categories/classkit">classkit</a></li>
+
+<li><a href="/categories/classobj">classobj</a></li>
+
+<li><a href="/categories/ctype">ctype</a></li>
+
+<li><a href="/categories/datetime">datetime</a></li>
+
+<li><a href="/categories/errorfunc">errorfunc</a></li>
+
+<li><a href="/categories/exec">exec</a></li>
+
+<li><a href="/categories/filesystem">filesystem</a></li>
+
+<li><a href="/categories/funchand">funchand</a></li>
+
+<li><a href="/categories/i18n">i18n</a></li>
+
+<li><a href="/categories/info">info</a></li>
+
+<li><a href="/categories/json">json</a></li>
+
+<li><a href="/categories/language">language</a></li>
+
+<li><a href="/categories/mail">mail</a></li>
+
+<li><a href="/categories/math">math</a></li>
+
+<li><a href="/categories/misc">misc</a></li>
+
+<li><a href="/categories/net-gopher">net-gopher</a></li>
+
+<li><a href="/categories/network">network</a></li>
+
+<li><a href="/categories/objaggregation">objaggregation</a></li>
+
+<li><a href="/categories/outcontrol">outcontrol</a></li>
+
+<li><a href="/categories/pcre">pcre</a></li>
+
+<li><a href="/categories/runkit">runkit</a></li>
+
+<li><a href="/categories/stream">stream</a></li>
+
+<li><a href="/categories/strings">strings</a></li>
+
+<li><a href="/categories/url">url</a></li>
+
+<li><a href="/categories/var">var</a></li>
+
+<li><a href="/categories/xdiff">xdiff</a></li>
+
+<li><a href="/categories/xml">xml</a></li>
+
+</ul>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("phpjs", 10, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/phpjs" class="twitter-follow-button" data-show-count="false">Follow @phpjs</a>
+  
+</section>
+
+<section>
+  <h1>Banners</h1>
+  
+
+  <a href="http://www.pledgie.com/campaigns/5962"><img alt="Click here to lend your support to: phpjs and make a donation at www.pledgie.com !" src="http://www.pledgie.com/campaigns/5962.png?skin_name=chrome" border="0"></a>
+
+  <br />
+  <br />
+  
+  <iframe src="http://api.flattr.com/button/view/?url=http%3A%2F%2Fphpjs.org&amp;" width="55" height="62" frameborder="0" scrolling="no" border="0" marginheight="0" marginwidth="0" allowtransparency="true"></iframe>
+
+  
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Kevin van Zonneveld -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+   -
+  <span class="credit">Theme by <a href="http://melandri.net/2012/07/23/darkstripes-octopress-theme-released/">alessandro melandri</a></span>
+</p>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'phpjs';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://phpjs.org/about/index.html';
+        var disqus_url = 'http://phpjs.org/about/index.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
