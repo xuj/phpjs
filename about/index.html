@@ -9,7 +9,7 @@
   <meta name="author" content="Kevin van Zonneveld">
 
   
-  <meta name="description" content="About php.js Sep 26th, 2012 php.js is a resource that offers community-built JavaScript alternatives for PHP functions. If you want to perform high- &hellip;">
+  <meta name="description" content="About php.js Sep 26th, 2012 php.js is a resource that offers community-built JavaScript alternatives to PHP functions. Why on earth would you port &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -81,10 +81,6 @@
   <li><a href="/blog/archives">Blog</a></li>
   <li><a href="/functions">Functions</a></li>
   <li><a href="/authors">Authors</a></li>
-  <li><a target="_blank" href="https://github.com/kvz/phpjs/wiki/_pages">Wiki</a></li>
-  <li><a target="_blank"  href="http://twitter.com/phpjs">@phpjs</a></li>
-  <li><a target="_blank"  href="http://identi.ca/brettz9">@brettz9</a></li>
-  <li><a target="_blank"  href="http://twitter.com/kvz">@kvz</a></li>
 </ul>
 
 </nav>
@@ -110,39 +106,62 @@
 <time datetime="2012-09-26T17:18:00+02:00" pubdate data-updated="true">Sep 26<span>th</span>, 2012</time></p>
   </header>
   
-  <p>php.js is a resource that offers community-built JavaScript alternatives for PHP functions.</p>
+  <p>php.js is a resource that offers community-built JavaScript alternatives to PHP functions.</p>
 
-<p>If you want to perform high-level operations on JavaScript platforms such as webbrowsers, node.js, etc, you probably need to write JS that combines its lower-level functions and build it up until you have something useful like:
+<p><strong>Why on earth would you port php to js?</strong></p>
+
+<ul>
+<li>to see if we can</li>
+<li>to learn JavaScript</li>
+<li>to help others learn JavaScript</li>
+<li>to see how a php program performs with V8 strapped on it&#8217;s back</li>
+<li>to run &amp; debug php code in the browser</li>
+<li>to profit from helpful functions like:
 <a href="http://phpjs.org/functions/strip_tags/">strip_tags</a>,
 <a href="http://phpjs.org/functions/strtotime/">strtotime</a>,
 <a href="http://phpjs.org/functions/strftime/">strftime</a>,
 <a href="http://phpjs.org/functions/number_format/">number_format</a>,
-<a href="http://phpjs.org/functions/wordwrap/">wordwrap</a>, or
-<a href="http://phpjs.org/functions/date/">date</a>.</p>
+<a href="http://phpjs.org/functions/wordwrap/">wordwrap</a>,
+<a href="http://phpjs.org/functions/vsprintf/">vsprintf</a>, and
+<a href="http://phpjs.org/functions/date/">date</a>, that are too high-level for JavaScript.</li>
+</ul>
 
-<p>PHP is a language with many high-level functions and while they&#8217;re not always implemented as consistently as we&#8217;d like (mimicking their underlying C parts), it has a huge following familiar with its functions.</p>
+
+<p>PHP is a language with many high-level functions and while they&#8217;re not always
+implemented as consistently as we&#8217;d like (mimicking their underlying C parts),
+they do get many programming jobs done without the need for additional libraries
+or abstractions.</p>
 
 <p>We recognize JS has beautiful language features, and we encourage you to learn them.
-Never let php.js be an excuse not to.
-For the this reason we don&#8217;t offer gigantic php.js packages or compilers anymore.</p>
+Never let php.js be an excuse not to. For the this reason we don&#8217;t offer
+gigantic php.js packages or compilers.</p>
 
-<p>That said, we do think it&#8217;s a challenge to port everything and decided to also port low-level PHP functions like
+<p>That said, we do think it&#8217;s a challenge to port everything and decided to also port
+low-level PHP functions like
 <a href="http://phpjs.org/functions/strpos/">strpos</a>
-even though it has a perfectly fine (and more performant!) JavaScript counterpart (<a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/indexOf">String.indexOf</a>).
-Besides the intellectual challenge of seeing how far we could come, porting ALL THE THINGS opens up php.js to be used for
-other fun thought excercises such as realtime in-browser debugging/running of PHP code, or running .php files with JavaScript interpreters.
-Also, there are quite a few PHP developers that use php.js just to learn how something is done in JavaScript.</p>
+that have a perfectly fine (and more performant!) JavaScript
+counterparts (<a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String/indexOf">String.indexOf</a> in this case).</p>
 
-<p>And so we see ourselves as this big resource and leave it up to the developer to decide what makes sense to take from it.
-And what not.</p>
+<p>Besides the geeky-challenge of seeing how far we could come, porting ALL THE THINGS also
+opens up php.js to other fun experiments such as realtime in-browser debugging/running of
+PHP code, or running <code>.php</code> files with JavaScript engines such as V8.</p>
 
-<p>Under the motto: &#8220;Make it work, then make it work better&#8221;, we have plently of functions here online that aren&#8217;t perfect just yet.
-If you know how to improve, just send us a pull request on GitHub.</p>
+<p>php.js also is a reference for PHP developers new to JavaScript, wanting to see how
+something can be done in JavaScript.</p>
+
+<p>And so we see ourselves as this big resource and leave it up to the developer
+to decide what makes sense to take from it.</p>
+
+<p>And what not.</p>
+
+<p>Going by <a href="https://medium.com/what-i-learned-building/9216e1c9da7d">The McDonald&#8217;s Theory</a>
+we have plently of functions here online that aren&#8217;t perfect just yet.
+If you know how to improve, just send us a pull request on GitHub!</p>
 
 <h2>Contributing</h2>
 
-<p>We use <a href="http://github.com/kvz/phpjs">github</a> for collaboration. Comments are for remarks only.
-Please adhere to our <a href="https://github.com/kvz/phpjs/wiki/DeveloperGuidelines">coding standards</a> before
+<p>We use <a href="http://github.com/kvz/phpjs">GitHub</a> for collaboration. Comments are for remarks only.
+Please adhere to our <a href="http://nodeguide.com/style.html">coding standards</a> before
 sending a pull request.</p>
 
 <h2>Licensing</h2>
