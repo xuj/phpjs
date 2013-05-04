@@ -4,7 +4,7 @@
   <title><![CDATA[Category: coding style | php.js]]></title>
   <link href="http://phpjs.org/categories/coding-style/atom.xml" rel="self"/>
   <link href="http://phpjs.org/"/>
-  <updated>2013-05-04T18:16:29+02:00</updated>
+  <updated>2013-05-04T18:20:07+02:00</updated>
   <id>http://phpjs.org/</id>
   <author>
     <name><![CDATA[Kevin van Zonneveld]]></name>
@@ -24,13 +24,13 @@ and standards that are other people have already invested a great deal of time
 in to get right.</p>
 
 <p>In this light, I've decided to adopt <a href="http://nodeguide.com/style.html">Felix' Node.js Style Guide</a>
-for coding standards, instead of maintaining our own.</p>
+for coding standards, instead of running our own.</p>
 
 <p>It saves us time maintaining and it becomes easier for people to contribute because
-they don't have to memorize php.js' own where we diverge.</p>
+they don't have to memorize where php.js diverges.</p>
 
-<p>For the most important parts, our codebase is already compatible with it, so
-we won't get any weird space+tab indentations as a result.</p>
+<p>For the big parts our codebase is already compatible with it, so
+we won't get any weird <a href="http://www.emacswiki.org/pics/static/TabsSpacesBoth.png">space + tab</a> indentations as a result, as we start adding code that follows the guide.</p>
 
 <p>Going forward, contributions should comply with these conventions before being
 merged in.</p>
